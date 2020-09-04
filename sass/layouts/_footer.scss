@@ -1,0 +1,42 @@
+.footer {
+  background-color: $black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-menu {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.logo-address {
+  display: block;
+  margin-right: 30px;
+  width: 270px;
+  justify-content: left;
+}
+
+.contacts-address {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.padding-zero {
+  padding-left: 0;
+}
+
+.contacts-item {
+  display: block;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}

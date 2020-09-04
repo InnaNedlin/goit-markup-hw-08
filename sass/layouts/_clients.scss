@@ -1,0 +1,32 @@
+.clients-list {
+  @extend %list !optional;
+  display: flex;
+  align-items: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid $grey;
+  color: $grey;
+  transition: color $transition, border $transition;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients-icon {
+  vertical-align: middle;
+  fill: currentColor;
+}

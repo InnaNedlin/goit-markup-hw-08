@@ -1,0 +1,97 @@
+/* Projects */
+.flex-container {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.container-element {
+  margin-right: 30px;
+  width: calc((100% - 60px) / 3);
+  //   width: 370px;
+  //   height: 404px;
+  margin-bottom: 30px;
+  background: $white-color;
+  box-sizing: border-box;
+  //   border: 2px solid tomato;
+
+  &:nth-child(3n + 0) {
+    margin-right: 0;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 0;
+}
+
+.list-link {
+  text-decoration: none;
+
+  &:hover .box-hover,
+  &:focus .box-hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-box {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+}
+
+.project-image {
+  display: block;
+}
+
+.box-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  color: $white-color;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform $transition;
+}
+
+.link-description {
+  margin: 0;
+  padding: 63px 24px;
+  width: 322px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: left;
+  justify-content: center;
+}
+
+.description {
+  padding: 24px 20px;
+  width: 370px;
+  border-right: 1px solid $description-color;
+  border-left: 1px solid $description-color;
+  border-bottom: 1px solid $description-color;
+  border-top: none;
+}
+
+.section-title {
+  /* margin-top: 20px; */
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+}
+
+.list-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}

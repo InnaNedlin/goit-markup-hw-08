@@ -1,0 +1,50 @@
+.padding-top-zero {
+  padding-top: 0;
+}
+
+.feature-list {
+  @extend %list !optional;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > .item {
+    width: 270px;
+  }
+}
+
+.background-feature {
+  width: 270px;
+  height: 120px;
+  background-color: $bg-feature;
+  border-radius: 4px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+  vertical-align: middle;
+}
+
+.list-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section .description {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}

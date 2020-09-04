@@ -1,0 +1,35 @@
+.social-list-footer {
+  @extend %list !optional;
+  display: flex;
+  height: 44px;
+  width: 270px;
+  justify-content: left;
+}
+
+.social-item-footer {
+  display: block;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-icon-footer {
+  fill: $white-color;
+}

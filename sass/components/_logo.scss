@@ -1,0 +1,26 @@
+.logo {
+  margin-right: 85px;
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: $dark-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.web {
+  color: $accent-color;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $white-color;
+}

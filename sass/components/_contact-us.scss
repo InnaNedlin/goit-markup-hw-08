@@ -1,0 +1,49 @@
+.nav-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact-us {
+  @extend %list !optional;
+  display: flex;
+  margin-left: auto;
+}
+
+.email {
+  margin-right: 30px;
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.icon-smartphone {
+  vertical-align: middle;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-envelope {
+  vertical-align: middle;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-us .item + .item {
+  margin-left: 50px;
+}
