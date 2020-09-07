@@ -16,10 +16,14 @@
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
   font-family: $font-secondary;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 0.85;
+
+  // font-size: 26px;
+  // line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $white-color;

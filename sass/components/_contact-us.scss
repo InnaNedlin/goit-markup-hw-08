@@ -4,8 +4,9 @@
 }
 
 .contact-us {
+  display: none;
   @extend %list !optional;
-  display: flex;
+  // display: flex;
   margin-left: auto;
 }
 

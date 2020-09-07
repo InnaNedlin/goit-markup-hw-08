@@ -2,9 +2,11 @@
   @extend %list !optional;
   display: flex;
   height: 44px;
-  width: 270px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   justify-content: center;
+
+  // width: 270px;
+  // margin-bottom: 30px;
 }
 
 .social-item:not(:last-child) {

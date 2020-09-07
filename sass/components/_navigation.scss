@@ -5,8 +5,9 @@
 }
 
 .menu-nav {
+  display: none;
   @extend %list !optional;
-  display: flex;
+  // display: flex;
 
   .item:not(:last-child) {
     margin-right: 50px;

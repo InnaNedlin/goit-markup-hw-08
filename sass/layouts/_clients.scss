@@ -1,18 +1,19 @@
 .clients-list {
   @extend %list !optional;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .clients-item:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
 }
+
 .clients-link {
   display: flex;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
+  // align-items: center;
+  // justify-content: center;
+  width: 210px;
   height: 90px;
   border-radius: 4px;
   border: 1px solid $grey;

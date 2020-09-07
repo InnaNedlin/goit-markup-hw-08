@@ -2,16 +2,22 @@
 
 .work-list {
   @extend %list !optional;
-  display: flex;
+  // display: flex;
 
   .feature-item:not(:last-child) {
-    margin-right: 30px;
+    // margin-right: 30px;
+  }
+}
+
+.display-mob {
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 }
 
 .feature-box {
   position: relative;
-  width: 370px;
+  // width: 370px;
 }
 
 .feature-box-absolute {
