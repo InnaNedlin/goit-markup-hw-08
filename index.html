@@ -17,7 +17,7 @@
     <!--Шапка сайта-->
 
     <header class="page-header">
-      <div class="container flexbox"> -->
+      <div class="container flexbox">
        
         <!--Навигация-->
 
@@ -37,6 +37,8 @@
             </li>
           </ul>
         </nav>
+
+
         <!-- имейл и телефон -->
         
         <ul class="contact-us">
@@ -184,12 +186,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-menu">
             <li class="team-member">
+            <picture>
+              <source srcset="./images/Jpeg/index/desktop/team1.jpg 1x, ../images/Jpeg/index/desktop/team1@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/Jpeg/index/tablet/team1.jpg 1x, ../images/Jpeg/index/tablet/team1@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/Jpeg/index/mobile/team1.jpg 1x, ../images/Jpeg/index/mobile/team1@2x.jpg 2x" media="(max-width: 767px)" />
+              <!-- <img src="./images/team/desktop/img1.jpg" width="370" height="346" alt="барбер Джон Смит" /> -->
+
+
               <img
                 class="image"
                 src="./images/Jpeg/index/team1.jpg"
                 width="270"
                 alt="Продакт дизайнер"
               />
+                          </picture>
+
               <h3 class="team-title">Николай Кучеренко</h3>
               <p class="position-name" lang="en">Product Designer</p>
 
