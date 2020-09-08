@@ -4,18 +4,28 @@
 
 .feature-list {
   @extend %list !optional;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
+  display: block;
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   & > .item {
     width: 100%;
-    // width: 270px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    @include for-size(desktop) {
+      width: 270px;
+    }
   }
 }
 
 .background-feature {
-  // width: 100%;
+  width: 100%;
 
   // width: 270px;
   height: 120px;
@@ -29,13 +39,13 @@
 .icon-astronaut {
   width: 70px;
   height: 70px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
-  // margin: 25px 100px;
+  margin: 25px 190px;
   vertical-align: middle;
   align-items: center;
+
+  @include for-size(desktop) {
+    margin: 25px 100px;
+  }
 }
 
 .list-title {

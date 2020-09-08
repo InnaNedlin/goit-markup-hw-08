@@ -10,12 +10,15 @@
 .container-element {
   margin-right: 30px;
   width: calc((100% - 60px) / 3);
-  //   width: 370px;
-  //   height: 404px;
   margin-bottom: 30px;
   background: $white-color;
   box-sizing: border-box;
-  //   border: 2px solid tomato;
+
+  @include for-size(desktop) {
+    border: 2px solid tomato;
+    width: 370px;
+    height: 404px;
+  }
 
   &:nth-child(3n + 0) {
     margin-right: 0;

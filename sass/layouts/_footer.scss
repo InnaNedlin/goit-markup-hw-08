@@ -4,17 +4,22 @@
   padding-bottom: 60px;
 
   &-menu {
-    // display: flex;
-    // align-items: baseline;
+    @include for-size(desktop) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
 .logo-address {
   display: block;
   justify-content: center;
-  // margin-right: 30px;
-  // width: 270px;
-  // justify-content: left;
+
+  @include for-size(desktop) {
+    margin-right: 30px;
+    width: 270px;
+    justify-content: left;
+  }
 }
 
 .contacts-address {
