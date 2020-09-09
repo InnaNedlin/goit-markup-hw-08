@@ -1,9 +1,14 @@
 .social-list-footer {
   @extend %list !optional;
   display: flex;
+  width: 100%;
   height: 44px;
-  width: 270px;
-  justify-content: left;
+  justify-content: center;
+
+  @include for-size(desktop) {
+    justify-content: left;
+    width: 270px;
+  }
 }
 
 .social-item-footer {

@@ -13,6 +13,12 @@
   padding-left: 29px;
   padding-right: 28px;
   margin-left: 12px;
+
+  @include for-size(tablet-portrait) {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .btn-close-modal {

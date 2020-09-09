@@ -1,9 +1,23 @@
 .footer {
+  width: 100%;
+  display: block;
   background-color: $black;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @include for-size(desktop) {
+    background-color: $black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   &-menu {
+    display: flex;
+    flex-wrap: wrap;
+
     @include for-size(desktop) {
       display: flex;
       align-items: baseline;
@@ -12,10 +26,14 @@
 }
 
 .logo-address {
-  display: block;
+  text-align: center;
+  align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(desktop) {
+    display: block;
     margin-right: 30px;
     width: 270px;
     justify-content: left;
@@ -24,16 +42,46 @@
 
 .contacts-address {
   // margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $white-color;
   text-decoration: none;
   font-style: normal;
+
+  @include for-size(desktop) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    text-decoration: none;
+    font-style: normal;
+  }
 }
 
 .padding-zero {
-  // padding-left: 0;
+  @extend %list;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+
+  @include for-size(desktop) {
+    padding-left: 0;
+  }
+}
+
+.contacts-list {
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .contacts-item {

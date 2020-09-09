@@ -1,20 +1,28 @@
 .sign-up {
-  // width: 570px;
-  height: 86px;
+  width: 100%;
+
+  @include for-size(desktop) {
+    width: 570px;
+    height: 86px;
+  }
 }
 
 .join-us-form {
-  // display: flex;
-  // align-items: flex-start;
-  // flex-direction: row;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 
-// .form-field-footer {
-//   position: relative;
-//   // display: flex;
-//   // flex-direction: column;
-//   // width: 448px;
-// }
+.form-field-footer {
+  @include for-size(desktop) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+  }
+}
 
 .join-email {
   width: 100%;
