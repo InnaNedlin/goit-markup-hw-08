@@ -33,6 +33,8 @@ body {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   outline-color: tomato;
@@ -65,7 +67,7 @@ body {
   }
 
   &-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 0.84;
@@ -73,6 +75,7 @@ body {
     letter-spacing: 0.03em;
 
     @include for-size(desktop) {
+      margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.16;
     }
