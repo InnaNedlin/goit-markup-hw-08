@@ -1,5 +1,8 @@
 /* work */
 
+.padding-top-zero {
+  padding-top: 0;
+}
 .work-list {
   @extend %list !optional;
   // display: flex;

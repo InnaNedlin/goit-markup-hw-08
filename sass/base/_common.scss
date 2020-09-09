@@ -59,8 +59,6 @@ body {
 
 .section {
   padding: 60px 0;
-  // margin-right: 15px;
-  // margin-left: 15px;
 
   @include for-size(desktop) {
     padding: 94px 0;
