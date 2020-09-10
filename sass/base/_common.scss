@@ -97,3 +97,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

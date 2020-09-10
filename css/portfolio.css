@@ -403,7 +403,7 @@ template {
   border: none;
 }
 
-.menu-nav, .contact-us, .flex-container, .padding-zero, .social-list-footer {
+.menu-nav, .contact-us, .flex-container, .logo-address .padding-zero, .social-list-footer {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -521,6 +521,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
 }
 
 .page-header {
@@ -938,12 +944,36 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .footer-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -958,6 +988,7 @@ img {
 }
 
 .logo-address {
+  padding-top: 60px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -980,7 +1011,16 @@ img {
   }
 }
 
-.contacts-address {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-address .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+.logo-address .contacts-address {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -998,7 +1038,7 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .contacts-address {
+  .logo-address .contacts-address {
     margin: 0;
     font-size: 14px;
     line-height: 1.71;
@@ -1009,7 +1049,7 @@ img {
   }
 }
 
-.padding-zero {
+.logo-address .padding-zero {
   display: block;
   text-align: center;
   -webkit-box-align: center;
@@ -1023,18 +1063,18 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .padding-zero {
+  .logo-address .padding-zero {
     padding-left: 0;
   }
 }
 
-.contacts-list {
+.logo-address .contacts-list {
   display: block;
   text-align: center;
   text-decoration: none;
 }
 
-.contacts-item {
+.logo-address .contacts-item {
   display: block;
   margin-top: 9px;
   font-size: 14px;
