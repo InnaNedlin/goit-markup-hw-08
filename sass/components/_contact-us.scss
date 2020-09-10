@@ -1,13 +1,11 @@
-.nav-padding {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
 .contact-us {
   display: none;
   @extend %list !optional;
-  // display: flex;
-  margin-left: auto;
+
+  @include for-size(desktop) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .email {

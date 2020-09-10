@@ -525,6 +525,7 @@ img {
 
 .page-header {
   border: 1px solid #ececec;
+  position: relative;
 }
 
 .btn-hero {
@@ -623,54 +624,84 @@ img {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .menu-nav {
   display: none;
 }
 
-.menu-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media (min-width: 1200px) {
+  .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.menu-nav .item {
-  position: relative;
+@media (min-width: 1200px) {
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.menu-nav .nav-link.current {
+@media (min-width: 1200px) {
+  .item {
+    position: relative;
+  }
+}
+
+.nav-link.current {
   color: #2196f3;
 }
 
-.menu-nav .nav-link.current::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
+@media (min-width: 1200px) {
+  .menu-nav .nav-link.current::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
 }
 
-.nav-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 1200px) {
+  .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -678,7 +709,8 @@ img {
 }
 
 .logo {
-  margin-right: 85px;
+  margin-bottom: 16px;
+  margin-top: 16px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -686,6 +718,12 @@ img {
   text-decoration: none;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 85px;
+  }
 }
 
 .web {
@@ -705,14 +743,24 @@ img {
   color: #ffffff;
 }
 
-.nav-padding {
-  padding-top: 25px;
-  padding-bottom: 25px;
+@media (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .contact-us {
   display: none;
-  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .email {
@@ -1155,6 +1203,13 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -1185,6 +1240,8 @@ img {
   color: #afb1b8;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 1200px) {
@@ -1218,6 +1275,42 @@ img {
 .clients-icon {
   vertical-align: middle;
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .clients-item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .clients-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .clients-item:nth-child(1n) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-item .clients-item:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-item {
+    -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
+        flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    -ms-flex-preferred-size: calc((100% - 12 * 15px) / 6);
+        flex-basis: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
 }
 
 .footer {
@@ -1675,5 +1768,78 @@ textarea {
   margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 4px;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navigation,
+.contacts {
+  height: 40px;
+  width: 50px;
+}
+
+.navigation {
+  outline-color: violet;
 }
 /*# sourceMappingURL=main.css.map */
