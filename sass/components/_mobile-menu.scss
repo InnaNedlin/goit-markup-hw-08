@@ -1,6 +1,7 @@
 .mobile-menu {
-   @media screen and (min-width: 768px) {
-      display: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button {
@@ -39,17 +40,14 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;}
+    width: 100%;
   }
 
-    .menu-container .is-open {
-      display: block;
-    }
-  
-
-
-.menu-container{
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.menu-container .is-open {
+  display: block;
 }

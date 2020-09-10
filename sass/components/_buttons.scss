@@ -45,12 +45,24 @@
 
 .button-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
 
   .item {
-    text-align: center;
-    display: inline-block;
+    margin-bottom: 15px;
+    @extend %list;
+
+    @include for-size(desktop) {
+      text-align: center;
+      display: inline-block;
+      margin-right: 0;
+    }
   }
 }
 

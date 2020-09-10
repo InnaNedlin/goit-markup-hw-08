@@ -403,7 +403,7 @@ template {
   border: none;
 }
 
-.menu-nav, .contact-us, .feature-list, .work-list, .team-menu, .social-list, .clients-list, .logo-address .padding-zero, .social-list-footer {
+.button-container .item, .menu-nav, .contact-us, .feature-list, .work-list, .team-menu, .social-list, .clients-list, .logo-address .padding-zero, .social-list-footer {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -523,6 +523,12 @@ img {
   height: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
 .page-header {
   border: 1px solid #ececec;
   position: relative;
@@ -585,15 +591,34 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .button-container .item {
-  text-align: center;
-  display: inline-block;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  .button-container .item {
+    text-align: center;
+    display: inline-block;
+    margin-right: 0;
+  }
 }
 
 .btn-portfolio {
@@ -1804,6 +1829,12 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1841,28 +1872,20 @@ textarea {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
   }
-  .menu-container.is-open {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
   }
+}
+
+.menu-container .is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
