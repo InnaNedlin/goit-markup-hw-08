@@ -2,11 +2,11 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./utils/placeholders";
 @import "./base/common";
 @import "./layouts/page-header";
 @import "./components/buttons";
-@import "./components/navigation";
 @import "./components/logo";
 @import "./components/contact-us";
 @import "./layouts/hero";
@@ -20,4 +20,3 @@
 @import "./components/social-list-footer";
 @import "./layouts/sign-up";
 @import "./components/modal";
-@import "./components/mobile-menu";
