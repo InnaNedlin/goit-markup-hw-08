@@ -523,12 +523,6 @@ img {
   height: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .desktop {
-    display: none;
-  }
-}
-
 .page-header {
   position: relative;
 }
