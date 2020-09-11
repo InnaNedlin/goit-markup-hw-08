@@ -2,6 +2,7 @@
 @import "./utils/mixins";
 @import "./base/normalize";
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./utils/placeholders";
 @import "./base/common";
 @import "./layouts/page-header";
@@ -14,4 +15,3 @@
 @import "./layouts/join";
 @import "./components/social-list-footer";
 @import "./layouts/sign-up";
-@import "./components/mobile-menu";
