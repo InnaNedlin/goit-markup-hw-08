@@ -4,14 +4,39 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-    text-align: center;
-    margin-left: 166px;
+    // display: block;
+    // text-align: center;
+    // margin-left: 166px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 152px;
+    padding-left: 166px;
   }
 
   @include for-size(desktop) {
     width: 570px;
     height: 86px;
+  }
+}
+
+.join {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @include for-size(desktop) {
+    text-align: left;
   }
 }
 
@@ -43,6 +68,10 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background: transparent;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .icon-send-form {

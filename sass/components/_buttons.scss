@@ -19,6 +19,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+  @include for-size(desktop) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .btn-close-modal {

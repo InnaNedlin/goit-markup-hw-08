@@ -1,16 +1,19 @@
 .navigation {
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  @include for-size(desktop) {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   @include for-size(tablet-landscape) {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-bottom: 0;
   }
 }
 
@@ -19,16 +22,19 @@
 
   @extend %list !optional;
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 50px;
+  }
+
   @include for-size(desktop) {
     display: flex;
   }
 }
 
-.item:not(:last-child) {
-  @include for-size(desktop) {
-    margin-right: 50px;
-  }
-}
+// .item:not(:last-child) {
+//   @include for-size(desktop) {
+//     // margin-right: 50px;
+//   }
 
 .item {
   @include for-size(desktop) {

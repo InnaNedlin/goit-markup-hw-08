@@ -583,7 +583,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 15px;
   border: none;
   background-color: transparent;
 }
@@ -886,20 +886,10 @@ img {
   margin-right: 9.83px;
 }
 
-.navigation {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -911,16 +901,29 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .menu-nav {
+  .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-nav {
+    margin-right: 50px;
   }
 }
 
 @media (min-width: 1200px) {
-  .item:not(:last-child) {
-    margin-right: 50px;
+  .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -979,8 +982,19 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media (min-width: 1200px) {
   .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-right: 85px;
   }
 }
@@ -1085,6 +1099,13 @@ img {
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn-footer {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 
@@ -1312,21 +1333,26 @@ img {
 }
 
 .description {
-  padding: 24px 20px;
-  width: 450px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-top: none;
+  padding: 24px 20px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .description {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .description {
     width: 370px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .description {
     width: 354px;
   }
@@ -1417,8 +1443,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .logo-address {
+    padding-left: 89px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1531,7 +1562,19 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .join-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .join-menu {
+    padding-right: 89px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1539,25 +1582,6 @@ img {
     display: block;
     width: 270px;
     margin-right: 30px;
-  }
-}
-
-.join {
-  display: block;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-@media (min-width: 1200px) {
-  .join {
-    text-align: left;
   }
 }
 
@@ -1623,9 +1647,10 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign-up {
-    display: block;
-    text-align: center;
-    margin-left: 166px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 152px;
+    padding-left: 166px;
   }
 }
 
@@ -1633,6 +1658,31 @@ img {
   .sign-up {
     width: 570px;
     height: 86px;
+  }
+}
+
+.join {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .join {
+    text-align: left;
   }
 }
 
@@ -1678,6 +1728,12 @@ img {
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background: transparent;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join-email {
+    width: 450px;
+  }
 }
 
 .icon-send-form {

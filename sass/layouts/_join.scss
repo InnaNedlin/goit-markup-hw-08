@@ -3,7 +3,15 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    padding-right: 89px;
+    text-align: center;
+  }
 
   @include for-size(desktop) {
     display: block;
@@ -17,30 +25,8 @@
 //   padding-bottom: 60px;
 // }
 
-// @media screen and (min-width: 768px) and (max-width: 1139px) {
-//   padding-right: 89px;
-//   text-align: center;
-// }
-
 // @media screen and (min-width: 1140px) {
 //   width: 270px;
 //   margin-right: 93px;
 //   padding-top: 72px;
 // }
-
-.join {
-  display: block;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $white-color;
-
-  @include for-size(desktop) {
-    text-align: left;
-  }
-}

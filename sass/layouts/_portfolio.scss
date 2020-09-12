@@ -110,17 +110,21 @@
 }
 
 .description {
-  padding: 24px 20px;
-  width: 450px;
   border-right: 1px solid $description-color;
   border-left: 1px solid $description-color;
   border-bottom: 1px solid $description-color;
   border-top: none;
+  padding: 24px 20px;
 
-  @include for-size(desktop) {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 370px;
   }
-  @include for-size(tablet-landscape) {
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 354px;
   }
 }
