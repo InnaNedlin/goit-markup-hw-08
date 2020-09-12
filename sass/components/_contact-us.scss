@@ -1,5 +1,4 @@
 .contact-us {
-  display: none;
   @extend %list !optional;
 
   @include for-size(desktop) {
