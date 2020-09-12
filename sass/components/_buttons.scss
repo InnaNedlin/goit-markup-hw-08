@@ -14,6 +14,12 @@
   padding-right: 28px;
   margin-left: 12px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+
   @include for-size(tablet-portrait) {
     margin-top: 20px;
     margin-right: auto;
