@@ -8,7 +8,9 @@
 }
 
 .email {
-  margin-right: 30px;
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 
 .contact-link {
@@ -43,5 +45,7 @@
 }
 
 .contact-us .item + .item {
-  margin-left: 50px;
+  @include for-size(desktop) {
+    margin-left: 50px;
+  }
 }

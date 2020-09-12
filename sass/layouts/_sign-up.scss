@@ -1,5 +1,13 @@
 .sign-up {
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+    margin-left: 166px;
+  }
 
   @include for-size(desktop) {
     width: 570px;
