@@ -1687,18 +1687,13 @@ img {
 }
 
 .footer {
-  width: 100%;
-  display: block;
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer-menu {
@@ -1715,24 +1710,6 @@ img {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 @media (min-width: 1200px) {
   .footer-menu {
     display: -webkit-box;
@@ -1746,6 +1723,24 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1773,9 +1768,12 @@ img {
   }
 }
 
+.box {
+  padding-top: 60px;
+}
+
 @media screen and (max-width: 767px) {
   .box {
-    text-align: center;
     padding-bottom: 20px;
   }
 }
@@ -1783,9 +1781,15 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .box {
     text-align: center;
-    margin-right: 165px;
     margin-left: 76px;
-    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 270px;
+    margin-right: 70px;
+    padding-bottom: 60px;
   }
 }
 
