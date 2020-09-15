@@ -129,7 +129,7 @@
   }
 }
 
-.section-title {
+.section-title-portfolio {
   /* margin-top: 20px; */
   margin-bottom: 4px;
   font-weight: 700;
@@ -137,6 +137,10 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: $title-text-color;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    text-align: left;
+  }
 }
 
 .list-description {

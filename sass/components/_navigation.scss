@@ -36,8 +36,14 @@
 //     // margin-right: 50px;
 //   }
 
-.item {
-  @include for-size(desktop) {
+// .item {
+//   @include for-size(desktop) {
+//     position: relative;
+//   }
+// }
+
+.item .nav-link.current {
+  @media screen and (min-width: $tablet) {
     position: relative;
   }
 }
@@ -47,7 +53,7 @@
 }
 
 .menu-nav .nav-link.current::after {
-  @include for-size(desktop) {
+  @media screen and (min-width: $tablet) {
     position: absolute;
     content: "";
     bottom: 0;
