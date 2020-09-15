@@ -1094,7 +1094,7 @@ img {
   margin-left: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .btn-footer {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -1347,9 +1347,9 @@ img {
   padding: 24px 20px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .description {
-    width: 450px;
+    width: 100%;
   }
 }
 

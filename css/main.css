@@ -989,7 +989,7 @@ img {
   margin-left: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .btn-footer {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -1503,16 +1503,18 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .team-member {
-    width: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
+    width: 100%;
+  }
+  .team-member:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 1200px) {
-  .team-member:nth-child(4n) {
-    margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-member:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 

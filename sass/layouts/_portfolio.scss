@@ -116,8 +116,9 @@
   border-top: none;
   padding: 24px 20px;
 
-  @media screen and (max-width: 767px) {
-    width: 450px;
+  @media screen and (max-width: 480px) {
+    // width: 450px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {

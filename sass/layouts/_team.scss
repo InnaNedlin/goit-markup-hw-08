@@ -24,14 +24,22 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @include for-size(desktop) {
-    width: calc((100% - 30px * 3) / 4);
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include for-size(desktop) {
     &:nth-child(4n) {
       margin-right: 0;
+}
+
+.team-member {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
   }
 }
