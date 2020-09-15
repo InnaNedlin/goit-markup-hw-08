@@ -31,8 +31,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+    tr:nth-child(2n) {
+      // margin-bottom: 0;
       margin-right: 0;
     }
   }
@@ -48,17 +48,17 @@
   }
 }
 
-.container-element:nth-child(3n) {
-  @media screen and (min-width: $desktop) {
-    margin-right: 0;
-  }
-}
+// .container-element {
+//   :not(:nth-last-child(3n)) {
+//     margin-right: o;
+//   }
+// }
 
-.container-element:nth-child(2n) {
-  @media screen and (min-width: $tablet) {
-    margin-right: 0;
-  }
-}
+// .container-element:nth-child(2n) {
+//   @media screen and (min-width: $tablet) {
+//     margin-right: 0;
+//   }
+// }
 
 .list-link {
   text-decoration: none;
