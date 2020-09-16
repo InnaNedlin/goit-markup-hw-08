@@ -1394,7 +1394,8 @@ img {
   .icon-clock,
   .icon-diagram,
   .icon-astronaut {
-    margin: 25px 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
