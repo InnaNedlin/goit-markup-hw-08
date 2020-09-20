@@ -403,7 +403,7 @@ template {
   border: none;
 }
 
-.menu-nav, .contacts-us, .contact-us, .button-container .item, .flex-container, .padding-zero, .social-list-footer {
+.menu-nav, .contacts-us, .contact-us, .item, .flex-container, .padding-zero, .social-list-footer {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -896,7 +896,6 @@ img {
 @media (min-width: 768px) {
   .navigation {
     padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -927,27 +926,25 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .item .nav-link.current {
-    position: relative;
-  }
+.item .nav-link.current {
+  position: relative;
 }
 
 .nav-link.current {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-nav .nav-link.current::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-  }
+.menu-nav .nav-link.current::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 1200px) {
@@ -1127,6 +1124,14 @@ img {
 @media screen and (max-width: 767px) {
   .button-container {
     padding-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button-container {
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1138,21 +1143,22 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
 }
 
-.button-container .item {
+.item {
   margin-bottom: 15px;
 }
 
 @media (min-width: 1200px) {
-  .button-container .item {
+  .item {
     text-align: center;
     display: inline-block;
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1184,12 +1190,6 @@ img {
 }
 
 /* Projects */
-@media screen and (max-width: 767px) {
-  .flex-container {
-    padding-top: 40px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .flex-container {
     display: -webkit-box;
@@ -1197,7 +1197,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 14px;
     margin: -15px;
   }
 }
@@ -1209,7 +1208,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-top: 34px;
     margin: -15px;
   }
 }
