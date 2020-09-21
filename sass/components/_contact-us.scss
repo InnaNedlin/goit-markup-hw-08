@@ -1,30 +1,65 @@
+.contacts {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 0;
+    padding-left: 64px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
 .contact-us {
   @extend %list !optional;
 
-  @include for-size(desktop) {
-    display: flex;
-    margin-left: auto;
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   padding-top: 10px;
+  //   // padding-bottom: 10px;
+  // }
+  // @include for-size(desktop) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin-left: 50px;
+  // }
+}
+
+.contact-us .item + .item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
   }
 }
 
-// .item. email {
+// .contact-us .item + .item {
 //   @include for-size(desktop) {
-//     margin-right: 30px;
+//     margin-left: 50px;
 //   }
 // }
 
-.contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  text-decoration: none;
-  transition: color $transition;
+.menu-nav {
+  @extend %list;
 
-  &:focus,
-  &:hover {
-    color: $accent-color;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 32px;
+    // margin-left: 88px;
+    // margin-right: 50px;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
+
+.mail,
+.phone {
+  display: block;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -44,8 +79,28 @@
   fill: currentColor;
 }
 
-.contact-us .item + .item {
-  @include for-size(desktop) {
-    margin-left: 50px;
+.contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition: $transition;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
   }
 }

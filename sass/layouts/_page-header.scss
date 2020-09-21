@@ -1,19 +1,10 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: 1200px) {
-    border-bottom: 1px solid #ececec;
-  }
-}
-
-.page-header:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 0px;
-  border: 1px solid #ececec;
+  // @media screen and (min-width: 1200px) {
+  //   border-bottom: 1px solid #ececec;
+  // }
 }
 
 .flexbox,
@@ -23,6 +14,11 @@
 .contact-us {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -33,20 +29,28 @@
   }
 }
 
-.flexbox,
-.navigation,
-.menu-nav,
-.contacts,
-.contacts-us {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
-}
+// .navigation {
+//   @media screen and (min-width: 1200px) {
+//     width: 100%;
+//   }
+// }
 
 .navigation {
-  @media screen and (min-width: 1200px) {
-    width: 100%;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  // @include for-size(tablet-landscape) {
+  //   // padding-top: 26px;
+  //   // padding-bottom: 26px;
+  // }
+
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-bottom: 0;
   }
 }
 
@@ -133,7 +137,6 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 32px;
     padding-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {
@@ -141,27 +144,8 @@
   }
 }
 
-.contacts {
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    padding-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
-  }
-}
-
 .menu-nav {
-  @extend %list;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 32px;
-    margin-left: 88px;
-  }
+  padding-top: 32px;
 }
 
 .menu-nav .item {
@@ -175,32 +159,6 @@
     &:not(:last-child) {
       margin-right: 50px;
     }
-  }
-}
-
-.mail,
-.phone {
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-}
-
-.contacts-us {
-  @extend %list;
-}
-
-.contact-us.item + .item {
-  @media screen and (min-width: 1200px) {
-    margin-left: 30px;
-  }
-}
-
-.contact-us.item {
-  @media screen and (min-width: 480px) {
-    font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -240,80 +198,23 @@
   }
 }
 
-.menu-nav .active {
-  color: $accent-color;
+.item .nav-link.current {
   position: relative;
 }
 
-.active::after {
-  content: "";
+.nav-link.current {
+  color: $accent-color;
+}
+
+.menu-nav .nav-link.current::after {
   position: absolute;
+  content: "";
   bottom: 0;
   left: 0;
-
-  display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: $accent-color;
-}
-
-.contact-link {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-  text-decoration: none;
-
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-
-  @media screen and (min-width: 480px) {
-    font-size: 18px;
-    line-height: 1.14;
-  }
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: 1.16;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.14;
-  }
-}
-
-.mail {
-  display: block;
-  color: $primary-text-color;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.icon-envelope {
-  fill: currentColor;
-  margin-right: 2.8px;
-}
-
-.phone {
-  display: block;
-  color: $primary-text-color;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.icon-smartphone {
-  fill: currentColor;
-  margin-right: 9.83px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
