@@ -61,7 +61,7 @@
 
   @media screen and (max-width: 767px) {
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -72,27 +72,27 @@
   @include for-size(desktop) {
     display: flex;
     justify-content: center;
-    // margin-bottom: 50px;
     flex-wrap: nowrap;
     margin-bottom: 50px;
+    margin-top: 0;
   }
 }
 
-.item {
+.button-container .item {
   margin-bottom: 15px;
   @extend %list;
 
-  @include for-size(desktop) {
-    text-align: center;
-    display: inline-block;
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
-}
 
-//     @media screen and (min-width: 1200px) {
-//   margin-bottom: 0;
-// }
+  // @include for-size(desktop) {
+  //   text-align: center;
+  //   display: inline-block;
+  //   margin-right: 0;
+  //   margin-bottom: 0;
+  // }
+}
 
 .btn-portfolio {
   margin-right: 8px;

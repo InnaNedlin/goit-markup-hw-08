@@ -7,11 +7,11 @@
   }
 }
 
-.email {
-  @include for-size(desktop) {
-    margin-right: 30px;
-  }
-}
+// .item. email {
+//   @include for-size(desktop) {
+//     margin-right: 30px;
+//   }
+// }
 
 .contact-link {
   font-weight: 500;

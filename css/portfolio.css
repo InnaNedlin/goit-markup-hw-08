@@ -403,7 +403,7 @@ template {
   border: none;
 }
 
-.menu-nav, .contacts-us, .contact-us, .item, .flex-container, .padding-zero, .social-list-footer {
+.menu-nav, .contacts-us, .contact-us, .button-container .item, .flex-container, .padding-zero, .social-list-footer {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -533,7 +533,7 @@ img {
   }
 }
 
-header::after {
+.page-header:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -1019,12 +1019,6 @@ header::after {
   }
 }
 
-@media (min-width: 1200px) {
-  .email {
-    margin-right: 30px;
-  }
-}
-
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -1134,7 +1128,7 @@ header::after {
 @media screen and (max-width: 767px) {
   .button-container {
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1156,18 +1150,16 @@ header::after {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-bottom: 50px;
+    margin-top: 0;
   }
 }
 
-.item {
+.button-container .item {
   margin-bottom: 15px;
 }
 
-@media (min-width: 1200px) {
-  .item {
-    text-align: center;
-    display: inline-block;
-    margin-right: 0;
+@media screen and (min-width: 768px) {
+  .button-container .item {
     margin-bottom: 0;
   }
 }
