@@ -700,12 +700,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-navigation {
-    margin-left: 93px;
-  }
-}
-
 .menu-nav {
   padding-top: 32px;
 }
@@ -955,7 +949,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-right: 93px;
-    margin-left: 215px;
+    margin-left: 93px;
+    margin-top: 24px;
   }
 }
 
@@ -983,12 +978,19 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts {
     padding-bottom: 0;
+    margin-left: 100px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-us .item + .item {
     margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us .item + .item {
+    margin-left: 20px;
   }
 }
 
