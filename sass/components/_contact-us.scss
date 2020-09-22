@@ -5,8 +5,10 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 0;
-    padding-left: 64px;
+    align-self: flex-start;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 40px;
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 0;

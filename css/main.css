@@ -970,8 +970,11 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    padding-bottom: 0;
-    padding-left: 64px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 40px;
   }
 }
 
