@@ -30,7 +30,6 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white-color;
-    // background-color: tomato;
 
     @include for-size(tablet-landscape) {
       width: 696px;
@@ -68,6 +67,7 @@
 
   @include for-size(desktop) {
     background-image: url(../images/Jpeg/index/desktop/hero-bg.jpg);
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
